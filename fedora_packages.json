@@ -1,0 +1,35 @@
+{
+  "dnf": [
+    "util-linux-user",
+    "git",
+    "zsh",
+    "fzf",
+    "fd-find",
+    "ripgrep",
+    "neovim",
+    "nodejs",
+    "lsd",
+    "adobe-source-serif-pro-fonts",
+    "dnf-plugins-core"
+  ],
+  "flatpak": {
+    "root": [
+    ],
+    "flathub": [
+      "org.gnome.Extensions",
+      "com.mattjakeman.ExtensionManager",
+      "com.bitwarden.desktop",
+      "org.gimp.GIMP",
+      "org.videolan.VLC",
+      "org.chromium.Chromium",
+      "org.inkscape.Inkscape",
+      "com.nextcloud.desktopclient.nextcloud",
+      "org.freedesktop.Sdk.Extension.texlive",
+      "org.texstudio.TeXstudio",
+      "com.jetbrains.PyCharm-Professional",
+      "com.jetbrains.WebStorm",
+      "com.jgraph.drawio.desktop",
+      "rest.insomnia.Insomnia"
+    ]
+  }
+}

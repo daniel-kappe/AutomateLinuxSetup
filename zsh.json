@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    "fzf",
+    "zsh-autosuggestions",
+    "docker",
+    "git",
+    "fd",
+    "npm",
+    "pip",
+    "ng"
+  ]
+}

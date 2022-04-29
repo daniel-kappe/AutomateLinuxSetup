@@ -1,0 +1,35 @@
+#!/bin/env python3
+from glob import glob
+from os.path import isfile
+import fedora, ubuntu, zsh, nvim, fonts, npm, ssh, git
+
+
+def check_distro():
+  release_info = ''
+  for file in glob('/etc/*-release'):
+    if isfile(file):
+      with open(file, 'r') as file_object:
+        release_info += file_object.read()
+  release_info = release_info.lower()
+  if 'ubuntu' in release_info:
+    return 'ubuntu'
+  if 'fedora' in release_info:
+    return 'fedora'
+
+
+def install():
+  linux_distro = check_distro()
+  if linux_distro == 'fedora':
+    fedora.install()
+  elif linux_distro == 'ubuntu':
+    ubuntu.install()
+  zsh.install()
+  nvim.install()
+  fonts.install()
+  npm.configure()
+  ssh.configure()
+  git.configure()
+
+
+if __name__ == '__main__':
+  install()
