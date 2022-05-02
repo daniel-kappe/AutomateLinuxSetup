@@ -59,7 +59,7 @@ def setup_zshrc():
     zsh_config = load(zsh_config_file)
   with open(zshrc_path, 'w' if isfile(zshrc_path) else 'x') as zshrc_object:
     zshrc_object.write(f"""# Custom Path Variables
-export PATH=$HOME/.npm-global/bin:$HOME/bin:/usr/.local/bin:$PATH
+export PATH=$HOME/.npm-global/bin:$HOME/.local/bin:$HOME/bin:/usr/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="{ohmyzsh_path}"

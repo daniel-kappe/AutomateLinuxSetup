@@ -10,11 +10,12 @@
     "nodejs",
     "lsd",
     "adobe-source-serif-pro-fonts",
-    "dnf-plugins-core"
+    "dnf-plugins-core",
+    "python3-pip",
+    "pam_yubico",
+    "pcsc-tools"
   ],
   "flatpak": {
-    "root": [
-    ],
     "flathub": [
       "org.gnome.Extensions",
       "com.mattjakeman.ExtensionManager",
